@@ -24,10 +24,10 @@ import org.springframework.context.annotation.Configuration;
 public class ElasticSearchClientConfig {
 
   @Bean
-  public RestHighLevelClient restHighLevelClient(){
+  public RestHighLevelClient restHighLevelClient() {
     RestHighLevelClient client = new RestHighLevelClient(
         RestClient.builder(
-            new HttpHost("localhost", 9200, "http") ));
+            new HttpHost("localhost", 9200, "http")));
     return client;
   }
 }
